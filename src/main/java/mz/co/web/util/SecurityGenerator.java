@@ -5,6 +5,9 @@ import org.apache.shiro.authc.credential.PasswordService;
 
 /**
  * @author Americo Chaquisse
+ * 
+ * NOTE: This class is not being used in this example. 
+ * Use it to encrypt passwords before persisting into the database
  */
 public class SecurityGenerator {
 
@@ -13,8 +16,6 @@ public class SecurityGenerator {
         PasswordService passwordService = new DefaultPasswordService();
 
         String encryptedPassword = passwordService.encryptPassword(string);
-
-        //do things like update the user password on database
 
         return encryptedPassword;
 

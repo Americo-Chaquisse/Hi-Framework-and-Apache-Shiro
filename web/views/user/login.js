@@ -1,4 +1,0 @@
-Hi.view(function($scope){
-
-
-});

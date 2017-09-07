@@ -14,5 +14,4 @@ public class User extends Controller{
     public void login() throws MvcException {
         this.callView();
     }
-
 }
